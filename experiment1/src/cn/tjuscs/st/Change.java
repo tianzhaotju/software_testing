@@ -6,6 +6,9 @@ public class Change {
 	
 	public boolean makeChange(int sum){
 		
+		System.out.println("Test case : ");
+		System.out.println(sum);
+		
 		for(int i=0; i<money.length; i++) {
 			if(sum >= money[i]) {
 				sum -= money[i];
@@ -15,9 +18,13 @@ public class Change {
 			}
 		}
 		
-		if(sum == 0)
+		if(sum == 0) {
+			System.out.println("Test result : True");
 			return true;
-		else
+		}
+		else {
+			System.out.println("Test result : True");
 			return false;
+		}
 	}
 }
